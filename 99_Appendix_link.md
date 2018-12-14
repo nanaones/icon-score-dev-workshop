@@ -1,19 +1,19 @@
-# 1. 아이콘 공식 깃헙
+# 1. ICON official Github
 https://github.com/icon-project
 
-# 2. 아이콘 개발자 포럼
+# 2. ICON Devportal
 https://icondev.io/index.do
 
-# 3. 트래커
+# 3. Tracker
 
-## 메인넷
+## Mainnet
 https://tracker.icon.foundation
 
-## 테스트넷
+## Testnet
 https://bicon.tracker.solidwallet.io
 
-# 4. ICONex(아이콘 지갑)
+# 4. ICONex(ICON wallet)
 https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel?hl=ko
 
-# 5. Faucet(테스트넷 ICX 지급)
+# 5. Faucet(Testnet)
 http://52.88.70.222
