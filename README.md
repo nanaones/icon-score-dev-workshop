@@ -1,14 +1,21 @@
 
 # ICONloop tbears sample
 
-iconloop의 tbears 를 활용한 local 에서의 deploy, testnet(여의도)으로의 deploy를 다룹니다.
+iconloop의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 deploy를 실습합니다.
+
+각 실습은 01_Local, 02_Testnet 의 두 폴더로 나뉘어 있습니다.
+
 
 # How to use
  
 ### 1. docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
- ``` docker build --t icon .```
- 
+ ` git clone https://github.com/nanaones/iconloop_tbears_sample `
+
+ ``` cd iconloop_tbears_sample ```
+
+ ``` docker build --tag icon .```
+  
 
 
 ### 2. docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
@@ -72,23 +79,23 @@ docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안�
 
 # 내용살펴보기 
 
-## 01_Local 
+## 01_Local 디렉토리
 
 * T-Bears 만을 사용하여 Local Network에 SCORE 를 deploy(배포)합니다.
 * Local Network에 배포한 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
 
-## 02_Testnet
+## 02_Testnet 디렉토리
 
 * T-Bears 를 활용하여, Testnet(여의도)에 SCORE 를 deploy(배포)합니다. 
 * 배포한 SCORE를 향하여 call, sendtx 와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
 
-## 01_init 
+## 01_init 디렉토리
 
 ``` tbears init <project> <SCORE class> ``` 명령어를 통해 생성되는 기본 SCORE인 ``` project ``` 폴더와 생성된 SCORE를 deploy(배포)하기 위한 shell script인 ``` 01_deploy.sh``` 와, 배포된 SCORE를 call 하기 위한  ``` 02_call.sh``` shell script가 포함되어있습니다.
 
 
 ##### ``` 01_deploy.sh```
-- 01_init 아래에 있는 project폴더를 deploy 합니다.
+- 01_init 디렉토리 아래에 있는 project폴더를 deploy 합니다.
 
 ##### ``` 02_call.sh```
 - ``` 01_deploy.sh```를 통해서 deploy(배포)한 SCORE의 특정 메소드를 call 해 주고, 결과를 출력해 줍니다.
@@ -98,7 +105,7 @@ docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안�
 - URI 는 ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 - stepLimit( 수수료 )을 설정합니다.
 
-## 02_Show_me_the_money
+## 02_Show_me_the_money 디렉토리
 * T-Bears 를 활용하여, Test Network(여의도)에 SCORE 를 deploy(배포)합니다.
 * ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 * 입력한 주소의 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다.
@@ -115,7 +122,7 @@ docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안�
 - URI 는 ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 - stepLimit( 수수료 )을 설정합니다.
 
-##### Show_me_the_money
+##### Show_me_the_money 디렉토리
 ``` tbears init <project> <SCORE class> ``` 으로 만들어진 기본 SCORE를 변형하여 만들어진 SCORE입니다. ```Show_me_the_money``` SCORE는, ICX를 송금받게 되면, SCORE의 배포자(owner)에게 받은 ICX를 바로 송금합니다.
 
 
