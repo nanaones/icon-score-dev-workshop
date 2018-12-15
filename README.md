@@ -123,7 +123,7 @@ docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안�
 - stepLimit( 수수료 )을 설정합니다.
 
 ##### Show_me_the_money 디렉토리
-``` tbears init <project> <SCORE class> ``` 으로 만들어진 기본 SCORE를 변형하여 만들어진 SCORE입니다. ```Show_me_the_money``` SCORE는, ICX를 송금받게 되면, SCORE의 배포자(owner)에게 받은 ICX를 바로 송금합니다.
+Show_me_the_money SCORE는 ``` tbears init <project> <SCORE class> ``` 으로 만들어진 기본 SCORE를 변형하여 만들어진 SCORE입니다. ```Show_me_the_money``` SCORE는 Show_me_the_money SCORE의 주소로 ICX를 송금받게 되면, SCORE의 배포자(owner)에게 Show_me_the_money SCORE가 송금 받은 ICX를 바로 송금합니다.
 
 
 
