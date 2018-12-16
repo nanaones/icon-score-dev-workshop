@@ -1,7 +1,7 @@
 
-# ICONloop tbears sample
+# ICON tbears sample
 
-iconloop의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 deploy를 실습합니다.
+icon의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 deploy를 실습합니다.
 
 각 실습은 01_Local, 02_Testnet 의 두 폴더로 나뉘어 있습니다.
 
@@ -10,9 +10,9 @@ iconloop의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 d
  
 ### 1. docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
- ` git clone https://github.com/nanaones/iconloop_tbears_sample `
+ ` git clone https://github.com/nanaones/icon_tbears_sample `
 
- ``` cd iconloop_tbears_sample ```
+ ``` cd icon_tbears_sample ```
 
  ``` docker build --tag icon .```
   
