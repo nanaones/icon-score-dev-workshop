@@ -11,7 +11,7 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
 
 ## Build docker image and run the container 
  
-### 1. Github 로부터 빌드하는 방법  
+### 1. Github 로부터 빌드하는 방법 
 #### docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
 ```
@@ -29,7 +29,7 @@ $ docker run -it -p 9000:9000 icon
 
 ### 2. 로컬서버에서 icon.tar 파일을 다운로드 받아 실행하는 방법 
 인터넷 연결이 원할하지 않은 경우, local file server 에서 tar file 을 다운로드 받아 빌드할 수 있습니다. 
-- ftp://192.168.0.1:22
+- ftp://192.168.0.1:21
 - With SSID : icon
 
 ```
@@ -42,9 +42,24 @@ $ docker run -it -p 9000:9000 icon
 ### 3. dockercloud에도 이미지가 업로드 되어있습니다.
 빌드와 실행을 아래 명령어로 한 번에 할 수 있습니다.
 ``` 
-$ docker run -it -p 9000:9000 nanaones/icon:0.2 
+$ docker run -it -p 9000:9000 nanaones/icon:0.3
 ``` 
 
+### 4. 실습시간에는 추첨하는 SCORE의 빈칸을 채워봅니다.
+https://github.com/nanaones/GoodsEvent
+- ``` /goods_event ``` 안에는 다같이 빈칸을 채워볼 코드가 있습니다.
+- ``` /goods_event_ref_impl ``` 안에는 빈칸으로 만들기 이전의 코드가 있습니다.
+
+### Requirement Description
+
+1. The operator can start or stop the event.
+2. Participants can not participate in the event after the event stopped.
+3. The operator can change the event status from stop to start.
+4. Participants participate in the event by submitting a message, message should be a number within certain range.
+5. Paticipants can submit a message multiple times, and the message is updated with the latest submission. Multiple submittion does not increase the chance of win.
+6. A winner is selected each time the designated function is called, and the result should be appended to the list. There must be a way to list up the winner list.
+
+상세한 내용 참조 : https://github.com/nanaones/GoodsEvent#requirement-description
 
 ## docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리가 존재합니다. 
 
