@@ -2,7 +2,6 @@
 # ICON Workshop @ DevStamp 2018
 
 ICON의 Smart Contract (SCORE) 개발툴인 T-Bears를 활용하여 SCORE를 개발하고, Local network 및 Testnet(여의도)으로 deploy 합니다.
-
 실습에 사용할 T-Bears 개발툴과 실습 예제 파일은 Docker Image 로 배포됩니다. 
 
 ## Prerequisite 
@@ -170,4 +169,27 @@ Show_me_the_money SCORE는 ``` tbears init <project> <SCORE class> ``` 으로 �
 
 
 
+## Links
 
+#### 1. ICON official Github
+https://github.com/icon-project
+
+#### 2. ICON Developer portal
+https://icondev.io/index.do
+
+#### 3. Tracker
+Mainnet : https://tracker.icon.foundation
+
+Testnet : https://bicon.tracker.solidwallet.io
+
+#### 4. ICONex (ICON wallet chrome web store)
+https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel?hl=ko
+
+#### 5. Faucet (Testnet)
+http://52.88.70.222
+
+#### 6. GoodsEvent reference implementation
+https://github.com/nomadconnection/GoodsEvent
+
+#### 7. GoodsEvent workshop material Github
+https://github.com/nanaones/GoodsEvent
