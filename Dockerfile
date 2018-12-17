@@ -20,5 +20,5 @@ WORKDIR /home
 RUN	git clone https://github.com/nanaones/GoodsEvent
 COPY 	./run.sh	/other/
 COPY	./ICON		/home/
-COPY	./99_Appendix_link.md /home/
+COPY	./appendix_links.md /home/
 CMD 	/other/run.sh
