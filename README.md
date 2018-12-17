@@ -1,17 +1,17 @@
 
-# ICON Workshop @ DevStamp 2018 - https://www.devstamp.io/
+# ICON Workshop @ DevStamp 2018
 
 ICON의 Smart Contract (SCORE) 개발툴인 T-Bears를 활용하여 SCORE를 개발하고, Local network 및 Testnet(여의도)으로 deploy 합니다.
 
 각 실습은 01_Local, 02_Testnet 의 두 폴더로 나뉘어 있습니다.
 
 
-# Prerequisite 
+## Prerequisite 
 
 Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=edition&offering=community
 
 
-# How to use
+## How to use
  
 ### 1. docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
@@ -101,19 +101,19 @@ docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리�
 
 
 
-# 내용살펴보기 
+## 내용살펴보기 
 
-## 01_Local 디렉토리
+### 01_Local 디렉토리
 
 * T-Bears 만을 사용하여 Local Network에 SCORE 를 deploy(배포)합니다.
 * Local Network에 배포한 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
 
-## 02_Testnet 디렉토리
+### 02_Testnet 디렉토리
 
 * T-Bears 를 활용하여, Testnet(여의도)에 SCORE 를 deploy(배포)합니다. 
 * 배포한 SCORE를 향하여 call, sendtx 와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
 
-## 01_init 디렉토리
+### 01_init 디렉토리
 
 ``` tbears init <project> <SCORE class> ``` 명령어를 통해 생성되는 기본 SCORE인 ``` project ``` 폴더와 생성된 SCORE를 deploy(배포)하기 위한 shell script인 ``` 01_deploy.sh``` 와, 배포된 SCORE를 call 하기 위한  ``` 02_call.sh``` shell script가 포함되어있습니다.
 
@@ -129,7 +129,7 @@ docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리�
 - URI 는 ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 - stepLimit( 수수료 )을 설정합니다.
 
-## 02_Show_me_the_money 디렉토리
+### 02_Show_me_the_money 디렉토리
 * T-Bears 를 활용하여, Test Network(여의도)에 SCORE 를 deploy(배포)합니다.
 * ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 * 입력한 주소의 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다.
