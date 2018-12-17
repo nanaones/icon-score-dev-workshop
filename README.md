@@ -31,14 +31,20 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
 
 ```
  $ docker load --input icon.tar
- $ docker run -it -p 9000:9000 nanaones/icon:0.2
 ```
 
 ### 2. docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
 
  ``` 
  $ docker run -it -p 9000:9000 icon 
+ 
  ```
+### icon.tar 파일을 다운로드 받은 경우, 아래와같이 실행합니다. 
+```
+ 
+  $ docker run -it -p 9000:9000 nanaones/icon:0.2
+ ```
+
  
 ### dockercloud에도 이미지가 업로드 되어있습니다.
 빌드와 실행을 아래 명령어로 한번에 할 수 있습니다.
