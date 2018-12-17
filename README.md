@@ -3,69 +3,53 @@
 
 ICON의 Smart Contract (SCORE) 개발툴인 T-Bears를 활용하여 SCORE를 개발하고, Local network 및 Testnet(여의도)으로 deploy 합니다.
 
-각 실습은 01_Local, 02_Testnet 의 두 폴더로 나뉘어 있습니다.
-
+실습에 사용할 T-Bears 개발툴과 실습 예제 파일은 Docker Image 로 배포됩니다. 
 
 ## Prerequisite 
 
 Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=edition&offering=community
 
 
-## How to use
+## Build docker image and run the container 
  
-### 1. docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
+### Github 로부터 빌드하는 방법  
+#### docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
 ```
+$ git clone https://github.com/nanaones/icon_score_dev_workshop
 
- $ git clone https://github.com/nanaones/icon_score_dev_workshop
+$ cd icon_tbears_sample 
 
- $ cd icon_tbears_sample 
-
- $ docker build --tag icon .
- 
+$ docker build --tag icon .  
 ```
 
+#### docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
+``` 
+$ docker run -it -p 9000:9000 icon  
+```
+
+### 로컬서버에서 icon.tar 파일을 다운로드 받아 실행하는 방법 
 인터넷 연결이 원할하지 않은 경우, local file server 에서 tar file 을 다운로드 받아 빌드할 수 있습니다. 
 - ftp://192.168.0.1:22
 - With SSID : icon
 
 ```
- $ docker load --input icon.tar
-```
+$ docker load --input icon.tar    
 
-### 2. docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
-
- ``` 
- $ docker run -it -p 9000:9000 icon 
- 
- ```
-### icon.tar 파일을 다운로드 받은 경우, 아래와같이 실행합니다. 
+$ docker run -it -p 9000:9000 icon  
 ```
- 
-  $ docker run -it -p 9000:9000 nanaones/icon:0.2
- ```
 
  
 ### dockercloud에도 이미지가 업로드 되어있습니다.
-빌드와 실행을 아래 명령어로 한번에 할 수 있습니다.
-
-
- ``` 
-
- $ docker run -it -p 9000:9000 nanaones/icon:0.2 
- 
-
- ``` 
-
- 
- 
-docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리가 존재합니다. 
-
-
-## `/home 파일 트리` 
-
+빌드와 실행을 아래 명령어로 한 번에 할 수 있습니다.
+``` 
+$ docker run -it -p 9000:9000 nanaones/icon:0.2 
 ``` 
 
+
+## docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리가 존재합니다. 
+
+``` 
 /home
 .
 |-- 01_Local
