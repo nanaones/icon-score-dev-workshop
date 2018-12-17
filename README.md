@@ -161,7 +161,9 @@ $ docker run -it -p 9000:9000 nanaones/icon:0.2
 
 - deploy(배포)된 SCORE 에 ICX를 송금하는 트랜잭션을 발생시킵니다.
 - 결과를 출력해줍니다. 
-- 만들어진 트랜잭션 요청에 사용된 json 파일을 ``` sendtx.json ``` 으로 현 위치에 저장합니다. 
+- 만들어진 트랜잭션 요청에 사용된 json 파일을 ``` sendtx.json ``` 으로 현 위치에 저장합니다.
+- "-k " 옵션을 통해 sign을 하기 때문에, keystore파일이 필요합니다.
+
 
 ##### ``` 02_tbears_cli_config.json ```
 - T-Bears 를 활용하여 트랜잭션을 만들어 낼 때 사용되는 커스터마이징 옵션입니다.
