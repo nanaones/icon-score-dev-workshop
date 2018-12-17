@@ -131,8 +131,8 @@ docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리�
         |-- goods_event_send_event_stop.json
         |-- goods_event_send_join_event.json
         `-- goods_event_send_raffle.json 
-        
-        ```
+
+```
 
 
 
