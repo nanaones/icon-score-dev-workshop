@@ -12,7 +12,7 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
 
 ## Build docker image and run the container 
  
-### Github 로부터 빌드하는 방법  
+### 1. Github 로부터 빌드하는 방법  
 #### docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
 ```
@@ -28,7 +28,7 @@ $ docker build --tag icon .
 $ docker run -it -p 9000:9000 icon  
 ```
 
-### 로컬서버에서 icon.tar 파일을 다운로드 받아 실행하는 방법 
+### 2. 로컬서버에서 icon.tar 파일을 다운로드 받아 실행하는 방법 
 인터넷 연결이 원할하지 않은 경우, local file server 에서 tar file 을 다운로드 받아 빌드할 수 있습니다. 
 - ftp://192.168.0.1:22
 - With SSID : icon
@@ -40,7 +40,7 @@ $ docker run -it -p 9000:9000 icon
 ```
 
  
-### dockercloud에도 이미지가 업로드 되어있습니다.
+### 3. dockercloud에도 이미지가 업로드 되어있습니다.
 빌드와 실행을 아래 명령어로 한 번에 할 수 있습니다.
 ``` 
 $ docker run -it -p 9000:9000 nanaones/icon:0.2 
