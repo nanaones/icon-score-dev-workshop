@@ -138,11 +138,15 @@ $ docker run -it -p 9000:9000 nanaones/icon:0.2
 
 ##### ``` 01_deploy.sh```
 - 01_init 디렉토리 아래에 있는 project폴더를 deploy 합니다.
+- 03_tbears_cli_config.json 의 설정을 적용합니다.
+- "-k " 옵션을 통해 sign을 하기 때문에, keystore파일이 필요합니다.
 
 ##### ``` 02_call.sh```
-- ``` 01_deploy.sh```를 통해서 deploy(배포)한 SCORE의 특정 메소드를 call 해 주고, 결과를 출력해 줍니다.
+- ``` 01_deploy.sh```를 통해서 deploy(배포)한 SCORE의 readonly 메소드를 call 해 줍니다.
+- call 하기 위해서 필요한 옵션들을 ``` call.json``` 이라는 파일로 저장합니다. 
+- 실행한 결과를 출력합니다.
 
-##### ``` 02_tbears_cli_config.json ```
+##### ``` 03_tbears_cli_config.json ```
 - T-Bears 를 활용하여 트랜잭션을 만들어 낼 때 사용되는 커스터마이징 옵션입니다.
 - URI 는 ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
 - stepLimit( 수수료 )을 설정합니다.
