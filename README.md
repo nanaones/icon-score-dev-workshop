@@ -16,18 +16,22 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
 ### 1. docker build 를 통해, icon tag를 단 이미지를 빌드합니다. 
 
 ```
- $ git clone https://github.com/nanaones/icon_tbears_sample 
+
+ $ git clone https://github.com/nanaones/icon_score_dev_workshop
 
  $ cd icon_tbears_sample 
 
  $ docker build --tag icon .
+ 
 ```
+
 인터넷 연결이 원할하지 않은 경우, local file server 에서 tar file 을 다운로드 받아 빌드할 수 있습니다. 
 - ftp://192.168.0.1:22
 - With SSID : icon
 
 ```
- $ docker load --input icon.tar --tag icon
+ $ docker load --input icon.tar
+ $ docker run -it -p 9000:9000 nanaones/icon:0.2
 ```
 
 ### 2. docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
@@ -36,22 +40,28 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
  $ docker run -it -p 9000:9000 icon 
  ```
  
-docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리가 존재합니다. 
-
 ### dockercloud에도 이미지가 업로드 되어있습니다.
 빌드와 실행을 아래 명령어로 한번에 할 수 있습니다.
 
+
  ``` 
+
  $ docker run -it -p 9000:9000 nanaones/icon:0.2 
+ 
+
  ``` 
+
  
  
+docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리가 존재합니다. 
+
 
 ## `/home 파일 트리` 
 
 ``` 
 
 /home
+.
 |-- 01_Local
 |   |-- 01_init
 |   |   |-- 00_1_set_tbears_cli_config
@@ -73,28 +83,50 @@ docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리�
 |           |-- Show_me_the_money.py
 |           |-- __init__.py
 |           `-- package.json
-`-- 02_Testnet
-    |-- 01_init
-    |   |-- 00_1_set_tbears_cli_config
-    |   |-- 00_2_deploy_project
-    |   |-- 00_3_use_call
-    |   |-- 01_deploy.sh
-    |   |-- 02_call.sh
-    |   |-- 03_tbears_cli_config.json
-    |   `-- project
-    |       |-- __init__.py
-    |       |-- package.json
-    |       `-- project.py
-    `-- 02_Show_me_the_money
-        |-- 00_1_set_tbears_cli_config
-        |-- 00_2_Deploy_Show_me_the_money
-        |-- 01_sendtx.sh
-        |-- 02_tbears_cli_config.json
-        `-- Show_me_the_money
-            |-- Show_me_the_money.py
-            |-- __init__.py
-            `-- package.json
- ```
+|-- 02_Testnet
+|   |-- 01_init
+|   |   |-- 00_1_set_tbears_cli_config
+|   |   |-- 00_2_deploy_project
+|   |   |-- 00_3_use_call
+|   |   |-- 01_deploy.sh
+|   |   |-- 02_call.sh
+|   |   |-- 03_tbears_cli_config.json
+|   |   `-- project
+|   |       |-- __init__.py
+|   |       |-- package.json
+|   |       `-- project.py
+|   `-- 02_Show_me_the_money
+|       |-- 00_1_set_tbears_cli_config
+|       |-- 00_2_Deploy_Show_me_the_money
+|       |-- 01_sendtx.sh
+|       |-- 02_tbears_cli_config.json
+|       `-- Show_me_the_money
+|           |-- Show_me_the_money.py
+|           |-- __init__.py
+|           `-- package.json
+|-- 99_Appendix_link.md
+`-- GoodsEvent
+    |-- README.KR.md
+    |-- README.md
+    |-- goods_event
+    |   |-- __init__.py
+    |   |-- goods_event.py
+    |   `-- package.json
+    |-- goods_event_original
+    |   |-- __init__.py
+    |   |-- goods_event.py
+    |   `-- package.json
+    `-- goods_event_tests
+        |-- goods_event_call_check_event_state.json
+        |-- goods_event_call_check_join_message.json
+        |-- goods_event_call_count_join_user.json
+        |-- goods_event_call_show_event_winner.json
+        |-- goods_event_send_event_start.json
+        |-- goods_event_send_event_stop.json
+        |-- goods_event_send_join_event.json
+        `-- goods_event_send_raffle.json 
+        
+        ```
 
 
 
@@ -103,7 +135,7 @@ docker 이미지를 실행하면, `/home` 안에 아래와 같은 파일트리�
 ### 01_Local 디렉토리
 
 * T-Bears 만을 사용하여 Local Network에 SCORE 를 deploy(배포)합니다.
-* Local Network에 배포한 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
+* Local Network에 배포한 SCORE를 향하여 데이터를 조회하는 call, 송금과 같은 트랜잭션을 발생시키는 sendtx와 같은 명령을 실행하고, 결과를 확인합니다. 
 
 ### 02_Testnet 디렉토리
 
