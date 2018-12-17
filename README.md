@@ -20,11 +20,16 @@ icon의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 deplo
 
 ### 2. docker run 을 통해, 빌드된 이미지를 실행시킵니다. 
 
- ``` docker run -it icon ```
+ ``` docker run -it -p 9000:9000 icon ```
  
 
 docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안에 아래와 같은 파일트리가 존재합니다. 
 
+### 3. dockercloud에도 원격이미지가 업로드 되어있습니다.
+
+ ``` docker run -it -p 9000:9000 nanaones/icon:0.2 ``` 
+ 
+ 
 
 ## `도커 실행시, / home  파일트리` 
 
