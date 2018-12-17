@@ -93,7 +93,7 @@ $ docker run -it -p 9000:9000 nanaones/icon:0.2
 |           |-- Show_me_the_money.py
 |           |-- __init__.py
 |           `-- package.json
-|-- 99_Appendix_link.md
+|-- Appendix_link.md
 `-- GoodsEvent
     |-- README.KR.md
     |-- README.md
