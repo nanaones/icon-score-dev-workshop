@@ -25,7 +25,7 @@ icon의 tbears 를 활용하여 Local network, Testnet(여의도)으로의 deplo
 
 docker이미지를 실행 할 경우, 기본폴더인 ``` /home ```  폴더 안에 아래와 같은 파일트리가 존재합니다. 
 
-### 3. dockercloud에도 원격이미지가 업로드 되어있습니다.
+### dockercloud에도 이미지가 업로드 되어있습니다.
 
  ``` docker run -it -p 9000:9000 nanaones/icon:0.2 ``` 
  
