@@ -17,7 +17,7 @@ Docker가 설치되어 있어야 합니다. https://hub.docker.com/search/?type=
 ```
 $ git clone https://github.com/nanaones/icon_score_dev_workshop
 
-$ cd icon_tbears_sample 
+$ cd icon_score_dev_workshop 
 
 $ docker build --tag icon .  
 ```
