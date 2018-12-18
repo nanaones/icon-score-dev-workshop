@@ -195,6 +195,14 @@ Show_me_the_money SCORE는 ``` tbears init <project> <SCORE class> ``` 으로 �
 #### 1. ICON official Github
 https://github.com/icon-project
 
+#### ICON T-Bears Guide
+https://github.com/icon-project/t-bears
+
+#### ICON icon-rpc-server Guide
+https://github.com/icon-project/icon-rpc-server
+
+
+
 #### 2. ICON Developer portal
 https://icondev.io/index.do
 
