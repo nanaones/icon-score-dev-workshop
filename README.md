@@ -197,10 +197,10 @@ https://github.com/icon-project
 
 #### ICON T-Bears Guide
 https://github.com/icon-project/t-bears
-
 #### ICON icon-rpc-server Guide
 https://github.com/icon-project/icon-rpc-server
-
+#### ICON SCORE Guide
+https://icon-project.github.io/score-guide
 
 
 #### 2. ICON Developer portal
