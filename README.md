@@ -139,12 +139,12 @@ https://github.com/nanaones/GoodsEvent
 ### 01_Local 디렉토리
 
 * T-Bears 만을 사용하여 Local Network에 SCORE 를 deploy(배포)합니다.
-* Local Network에 배포한 SCORE를 향하여 데이터를 조회하는 call, 송금과 같은 트랜잭션을 발생시키는 sendtx와 같은 명령을 실행하고, 결과를 확인합니다. 
+* Local Network에 배포한 SCORE를 향하여 상태변화가 일어나지 않는 SCORE에 대한 함수를 호출하는 call, 송금과 같은 상태를 변화시키는 트랜잭션을 발생시키는 sendtx 명령을 실행하고, 결과를 확인합니다. 
 
 ### 02_Testnet 디렉토리
 
 * T-Bears 를 활용하여, Testnet(여의도)에 SCORE 를 deploy(배포)합니다. 
-* 배포한 SCORE를 향하여 call, sendtx 와 같은 트랜잭션을 전송하고, 결과를 확인합니다. 
+* Local Network에 배포한 SCORE를 향하여 상태변화가 일어나지 않는 SCORE에 대한 함수를 호출하는 call, 송금과 같은 상태를 변화시키는 트랜잭션을 발생시키는 sendtx 명령을 실행하고, 결과를 확인합니다. 
 
 ### 01_init 디렉토리
 
@@ -169,8 +169,7 @@ https://github.com/nanaones/GoodsEvent
 ### 02_Show_me_the_money 디렉토리
 * T-Bears 를 활용하여, Test Network(여의도)에 SCORE 를 deploy(배포)합니다.
 * ``` 01_Local ``` 에서는 Local 으로, ``` 02_Testnet ``` 에서는 Testnet(여의도)로 설정되어있습니다. 
-* 입력한 주소의 SCORE를 향하여 call, sendtx와 같은 트랜잭션을 전송하고, 결과를 확인합니다.
-
+* Local Network에 배포한 SCORE를 향하여 상태를 변화시키는 트랜잭션을 발생시키는 sendtx 명령을 실행하고, 결과를 확인합니다. 
 
 ##### ``` 01_sendtx.sh ```
 
